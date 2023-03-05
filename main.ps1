@@ -1,6 +1,8 @@
 class TestClass{
+    [string] $name = "hideru"
+
     [string] hoge(){
-        return "Hello PowerShell Class !!"
+        return "Hello PowerShell Class, " + $this.name + "!!"
     }
 }
 
